@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Abuelitos Cibernautas | Generaciones</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--ARCHIVOS CSS ASOCIADOS-->
+    <link rel="stylesheet" href="./css/proyectos.css"> </link>
+    <link rel="stylesheet" href="./css/reusable.css"> </link>
+    <link rel="stylesheet" href="./css/loadScreen.css"> </link>
+    <link rel="stylesheet" href="./css/normalize.css"> </link>
+    <link rel="stylesheet" href="./css/superslides.css">
+
+    <!--LOGO DE LA PAGINA EN EL NAVEGADOR-->
+    <link rel="icon" href="./img/logo-nav.png"></link>
+
+    <!--FUENTES Y FONT AWESOME-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/03f24985fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!------------------------------>
+    <!---------LOADSCREEN----------->
+    <!------------------------------>
+    <div id="container-load">
+        <div id="load"></div>
+    </div>
+
+    <!--BACK TO TOP BUTTON-->
+    <div class="backBtnContainer">
+        <button id="back-to-top" class="backToTop"><i class="fas fa-angle-double-up"></i></button>
+    </div>
+
+    <!------------------------------>
+    <!------------MENU-------------->
+    <!------------------------------>
+    <section class="container-menu">
+
+        <!--LADO IZQUIERDO DEL MENU-->
+        <div class="menu-left">
+            <a href="http://www.uabc.mx/" target="_blank" class="menu-logoUabc"><img src="./img/LogoUabc.png"></a>
+            <a href="index.html" class="responsive-menu-logo"><img src="./img/LogoAbuelitos.png"></a>
+        </div>
+
+        <!--LADO DERECHO DEL MENU-->
+        <div class="menu-right">
+            <a href="cursosTotal.html">Cursos</a>
+            <a href="galeria.html">Generaciones</a>
+            <span></span>
+            <a href="contacto.html" class="btnMenu">Contacto</a>
+        </div>
+
+        <!--RESPONSIVE MENU-->
+        <input type="checkbox" class="toggler">
+        <div class="hamburguer-content">
+            <a href="index.html">Inicio</a>
+            <a href="cursosTotal.html">Cursos</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="hamburguer-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </section>
+
+    <!------------------------------>
+    <!------------SLIDER------------>
+    <!------------------------------>
+    <div id="slides">
+        <ul class="slides-container">
+
+            <!--PRIMER SLIDE-->
+            <li>
+                <img src="./img/wellcome1.JPG" alt="">
+                <div class="opacity-slide1">
+                    <div class="description-slide1">
+                        <h2>Generación 2017-1</h2>
+                    </div>
+                </div>
+            </li>
+
+            <!--SEGUNDO SLIDE-->
+            <li>
+                <img src="./img/wellcome2.JPG" alt="">
+                <div class="opacity-slide1">
+                    <div class="description-slide1">
+                        <h2>Generación 2018-1</h2>
+                    </div>
+                </div>
+            </li>
+
+            <!--TERCER SLIDE-->
+            <li>
+                <img src="./img/wellcome3.JPG" alt="">
+                <div class="opacity-slide1">
+                    <div class="description-slide1">
+                        <h2>Generación 2019-1</h2>
+                    </div>
+                </div>
+            </li>
+
+            <!--CUARTO SLIDE-->
+            <li>
+                <img src="./img/wellcome4.JPG" alt="">
+                <div class="opacity-slide1">
+                    <div class="description-slide1">
+                        <h2>Generación 2020-1</h2>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <!--BOTONES PARA LA NAVEGACION ENTRE SLIDERS-->
+        <nav class="slides-navigation">
+            <a href="#" class="next"><i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="prev"><i class="fas fa-arrow-left"></i></a>
+        </nav>
+    </div>
+
+    <!--CONTENEDOR DEL EFECTO DEBAJO DEL SLIDER-->
+    <div class="wave1">
+        <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fffff7;"></path></svg></div>
+    </div>
+    
+    <!--JAVASCRIPT DEL SLIDER-->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.superslides.js"></script>
+    
+    <!------------------------------>
+    <!----------CONTENIDO----------->
+    <!------------------------------>
+    <section class="container-content">
+
+        <!--CONTENEDOR DE LA GALERIA DE FOTOS-->
+        <div class="content1">
+            <div class="content1-content">
+                <h4>GALERIA DE FOTOS</h4>
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="./img/gallery7.JPG" alt="" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./img/gallery8.JPG" alt="" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./img/gallery9.JPG" alt="" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./img/gallery5.JPG" alt="" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./img/gallery4.JPG" alt="" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./img/gallery6.JPG" alt="" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./img/gallery3.jpg" alt="" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./img/gallery2.jpg" alt="" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./img/gallery1.jpg" alt="" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+   <!------------------------------>
+    <!------------FOOTER------------>
+    <!------------------------------>
+    <footer>
+        <!--LOGO CENTRAL DEL FOOTER-->
+        <div class="container-logo">
+            <div class="logo-footer">
+                <a href="index.html"><img src="./img/LogoAbuelitos.png" alt=""></a>
+            </div>
+        </div>
+        <!--PRIMERA PARTE DEL FOOTER (CONTENIDO, REDES, ACTIVIDADES, SUGERENCIAS, CONTACTO)-->
+        <section class="footer-part1"> 
+
+            <!--CONTENIDO-->
+            <div class="footer-content-1">
+                <h3>Contenido del sitio</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cursosTotal.html">Cursos</a></li>
+                    <li><a href="galeria.html">Generaciones</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!--ACTIVIDADES O SERVICIOS-->
+            <div class="footer-content-1">
+                <h3>Nuestros cursos</h3>
+                <ul>
+                    <li><a href="./cursos/word.html">Curso de Word</a></li>
+                    <li><a href="./cursos/powerpoint.html">Curso de Powerpoint</a></li>
+                    <li><a href="./cursos/facebookComputadora.html">Facebook en computadora</a></li>
+                    <li><a href="./cursos/facebook.html">Facebook en celular</a></li>
+                    <li><a href="./cursos/google.html">Curso de Google</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!--CONTACTO PARA TRABAJO-->
+        <section class="footer-contactContainer">
+            <div class="container-contact">
+                <div class="footer-webs">
+                    <a href="https://www.facebook.com/groups/169641153180649" target="_blank" ><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/channel/UCKRk-M4_QsZSeJrU-SbMdPw" target="_blank" ><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--SEGUNDA PARTE DEL FOOTER (NOMBRES, COPYRIGHT, MAPA DEL SITIO-->
+        <section class="footer-part2">
+            <div class="footer-copyRight">
+                <p class="footer-developer">Powered by UABC</p>
+                <div>
+                    <p>©Copyright reserved</p>
+                    <span></span>
+                    <p>2021</p>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+
+    <!------------------------------>
+    <!----------JAVASCRIPT---------->
+    <!------------------------------>
+    <script>
+
+        //PARA LA PANTALLA DE CARGA
+        window.onload = function(){
+            var container = document.getElementById('container-load');
+            container.style.transform = 'translateY(-100%)';
+        }
+
+        //PARA EL BOTON PARA REGRESAR AL INICIO
+        const backToTop = document.querySelector("#back-to-top");
+        window.addEventListener("scroll", scrollFunction);
+        function scrollFunction() {
+            if (window.pageYOffset > 950){ // Show backToTopButton
+                if(!backToTop.classList.contains("btnEntrance")) {
+                    backToTop.classList.remove("btnExit");
+                    backToTop.classList.add("btnEntrance");
+                    backToTop.style.display = "block";
+                }
+            }
+            else{ // Hide backToTopButton
+                if(backToTop.classList.contains("btnEntrance")) {
+                    backToTop.classList.remove("btnEntrance");
+                    backToTop.classList.add("btnExit");
+                    setTimeout(function() {
+                        backToTop.style.display = "none";
+                    }, 250);
+                }
+            }
+        }
+        backToTop.addEventListener("click", goBack);
+        function goBack(){
+            window.scrollTo(0, 0);
+        }
+
+    </script>
+
+</body>
+</html>

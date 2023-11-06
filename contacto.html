@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Abuelitos Cibernautas | Contacto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--ARCHIVOS CSS ASOCIADOS-->
+    <link rel="stylesheet" href="./css/reusable.css"> </link>
+    <link rel="stylesheet" href="./css/contacto.css"> </link>
+    <link rel="stylesheet" href="./css/normalize.css"> </link>
+
+    <!--LOGO DE LA PAGINA EN EL NAVEGADOR-->
+    <link rel="icon" href="./img/logo-nav.png"></link>
+
+    <!--FUENTES Y FONT AWESOME-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/03f24985fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+
+
+    <!------------------------------>
+    <!------------MENU-------------->
+    <!------------------------------>
+    <section class="container-whiteMenu">
+        <!--LADO IZQUIERDO DEL MENU-->
+        <div class="whiteMenu-left">
+            <a href="index.html" class="whiteMenu-logo"><img src="./img/LogoAbuelitosGrande.png"></a>
+            <a href="index.html" class="responsive-whiteMenu-logo"><img src="./img/LogoAbuelitos.png"></a>
+        </div>
+        <!--LADO DERECHO DEL MENU-->
+        <div class="whiteMenu-right">
+            <a href="cursosTotal.html">Cursos</a>
+            <a href="galeria.html">Generaciones</a>
+            <span></span>
+            <a href="contacto.html" class="btnWhiteMenu">Contacto</a>
+        </div>
+
+        <!--RESPONSIVE MENU-->
+        <input type="checkbox" class="toggler">
+        <div class="hamburguer-content">
+            <a href="index.html">Inicio</a>
+            <a href="cursosTotal.html">Cursos</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="hamburguer-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </section>
+
+
+
+
+
+    <!------------------------------>
+    <!-----------CONTENT------------>
+    <!------------------------------>
+    <section class="container-general">
+        <div class="container-opacityContact">
+            <!--CONTENEDOR CON EL FORMULARIO-->
+            <div class="container-contact">
+                <!--CONTENEDOR CON LA INFORMACION-->
+                <div class="container-info">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>Información de contacto</h3>  
+                    <div class="contact-webs">
+                        <a href="https://www.facebook.com/groups/169641153180649" target="_blank" ><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.youtube.com/channel/UCKRk-M4_QsZSeJrU-SbMdPw" target="_blank" ><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!--FORMULARIO DE CONTACTO-->
+                <div class="container-form">
+                    <form action="./php/contacto.php" method="POST">
+                        <h3>Escribe un mensaje</h3>
+
+                        <label for="">Nombre:</label>
+                        <input type="text" name="nombre">
+
+                        <label for="">Correo electrónico:</label>
+                        <input type="text" name="correo">
+
+                        <label for="">Asunto:</label>
+                        <Select name="asunto">
+                            <option value="" disabled selected hidden>Selecciona un asunto</option>
+                            <option value="hola"></option>
+                            <option value="">hola3</option>
+                            <option value="">hola4</option>
+                            <option value="">hola5</option>
+                        </Select>
+
+                        <label for="">Mensaje</label>
+                        <textarea name="mensaje" id=""></textarea>
+
+                        <div class="form-btn">
+                            <button>Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------>
+    <!------------FOOTER------------>
+    <!------------------------------>
+    <section class="footer-part2">
+        <div class="footer-copyRight">
+            <p class="footer-developer">Powered by UABC</p>
+            <div>
+                <p>©Copyright reserved</p>
+                <span></span>
+                <p>2020</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
