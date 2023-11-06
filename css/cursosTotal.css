@@ -1,0 +1,90 @@
+/*---------------------------*/
+/*---------CONTENT-----------*/
+/*---------------------------*/
+html, body{
+    height: 100%;
+}
+h3{
+    font-family: 'Oswald', sans-serif;
+}
+
+/*CONTENEDOR GENERAL*/
+.container-all {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    background-color: #f8fad6;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+/*---------------------------*/
+/*-----------CARDS-----------*/
+/*---------------------------*/
+.container-opacity{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 80px;
+}
+.container-cards{
+    width: 75%;
+    height: auto;
+}
+.container-cards a{
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+.container-cards a:hover{
+    transform: translateY(-20px);
+}
+.container-cards a div{
+    width: 400px;
+    height: 450px;
+    margin: 57px 30px 30px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #fffff7;
+    box-shadow: 2px 4px 8px rgb(53, 53, 53);
+    padding-bottom: 40px;
+}
+.container-cards a div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.container-cards a div h3{
+    font-size: 28px;
+    color: #5b7a43;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+/*---------------------------*/
+/*----DISEÑO RESPONSIVO------*/
+/*---------------------------*/
+@media (max-width: 450px){
+    .container-cards a div{
+        width: 350px;
+    }
+}
+@media (max-width: 400px){
+    .container-cards a div{
+        width: 300px;
+    }
+}

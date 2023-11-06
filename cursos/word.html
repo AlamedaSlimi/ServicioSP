@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Abuelitos Cibernautas | Word</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--ARCHIVOS CSS ASOCIADOS-->
+    <link rel="stylesheet" href="../css/index.css"> </link>
+    <link rel="stylesheet" href="../css/reusable.css"> </link>
+    <link rel="stylesheet" href="../css/cursos.css"> </link>
+    <link rel="stylesheet" href="../css/normalize.css"> </link>
+    <link rel="stylesheet" href="../css/plantillaCursos.css"> </link>
+
+    <!--LOGO DE LA PAGINA EN EL NAVEGADOR-->
+    <link rel="icon" href="../img/logo-nav.png"></link>
+
+    <!--FUENTES Y FONT AWESOME-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/03f24985fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    
+
+    <!------------------------------>
+    <!-----------POPUP-------------->
+    <!------------------------------>
+    <div class="overlay" id="overlay">
+        <!--VENTANA DEL POPUP-->
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>CURSO DE WORD</h3>
+            <p>¡Aprenda a utilizar Microsoft Word desde la comodidad de su casa!</p>
+            <form action="../php/suscripcion.php" method="POST">
+                <div class="container-inputs">
+                    <div>
+                        <label for="">Nombre:</label>
+                        <input type="text" name="nombre">
+                    </div>
+                    <div>
+                        <label for="">Edad:</label>
+                        <input type="number" name="edad">
+                    </div>
+                    <div>
+                        <label for="">Correo electronico:</label>
+                        <input type="email" name="correo">
+                    </div>
+                    <div>
+                        <label for="">Grado maximo de estudios:</label>
+                        <input type="text" name="grado">
+                    </div>
+                    <div>
+                        <label for="">¿Pertenece a algún grupo o asociación?:</label>
+                        <Select name="grupo">
+                            <option value="" disabled selected hidden>Seleccione la respuesta</option>
+                            <option value="">Si</option>
+                            <option value="">No</option>
+                        </Select>
+                    </div>
+                    <div>
+                        <label for="">¿Cuál?:</label>
+                        <input type="text" name="cual">
+                    </div>
+                    <div>
+                        <label for="">¿Cómo se enteró de este curso?:</label>
+                        <input type="text" name="enterarse">
+                    </div>
+                    <div>
+                        <label for="">¿Había utilizado la computadora/celular/tablet antes?:</label>
+                        <Select name="utilizar">
+                            <option value="" disabled selected hidden>Seleccione la respuesta</option>
+                            <option value="">Si</option>
+                            <option value="">No</option>
+                        </Select>
+                    </div>
+                    <div>
+                        <label for="">Si es asi, ¿con que frecuencia?:</label>
+                        <input type="text" name="frecuencia">
+                    </div>
+                    <div>
+                        <label for="">¿Qué es lo que espera del curso?:</label>
+                        <input type="text" name="expectativa">
+                    </div>
+                </div>
+                <input type="submit" class="btn-popup" value="Suscribirse">
+            </form>
+        </div>
+    </div>
+
+
+    <!------------------------------>
+    <!------------MENU-------------->
+    <!------------------------------>
+    <section class="container-whiteMenu">
+
+        <!--LADO IZQUIERDO DEL MENU-->
+        <div class="whiteMenu-left">
+            <a href="../index.html" class="whiteMenu-logo"><img src="../img/LogoAbuelitosGrande.png"></a>
+            <a href="../index.html" class="responsive-whiteMenu-logo"><img src="../img/LogoAbuelitos.png"></a>
+        </div>
+
+        <!--LADO DERECHO DEL MENU-->
+        <div class="whiteMenu-right">
+            <a href="../cursosTotal.html">Cursos</a>
+            <a href="../galeria.html">Generaciones</a>
+            <span></span>
+            <a href="../contacto.html" class="btnWhiteMenu">Contacto</a>
+        </div>
+
+        <!--RESPONSIVE MENU-->
+        <input type="checkbox" class="toggler">
+        <div class="hamburguer-content">
+            <a href="../index.html">Inicio</a>
+            <a href="../cursosTotal.html">Cursos</a>
+            <a href="../galeria.html">Galería</a>
+            <a href="../contacto.html">Contacto</a>
+        </div>
+        <div class="hamburguer-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </section>
+
+    <!------------------------------>
+    <!-----------CONTENT------------>
+    <!------------------------------>
+    <section class="container-all">
+        
+        <!--CONTENEDOR PARA EL MENU CON CATEGORIAS-->
+        <div class="container-categories">
+            <div>
+                <h3>INTRODUCCION</h3>
+                <a href="#clase1">Primeros pasos</a> 
+                <a href="#clase2">Herramientas básicas</a> 
+                <a href="#clase3">Títulos e imágenes </a> 
+                <a href="#clase4">Configurar una página</a> 
+            </div>
+
+            <div>
+                <h3>MAS HERRAMIENTAS</h3>
+                <a href="#clase5">Tablas</a> 
+                <a href="#clase6">Cuadros de texto</a> 
+                <a href="#clase7">Enumerar páginas</a> 
+                <a href="#clase8">Combinación de correspondencia</a> 
+                <a href="#clase9">Smart Art</a> 
+                <a href="#clase10">Gráficas estadísticas</a> 
+            </div>
+
+            <div>
+                <h3>WORD AVANZADO</h3>
+                <a href="#clase11">Captura de pantalla</a> 
+                <a href="#clase12">Portadas</a> 
+                <a href="#clase13">Marcas de agua</a> 
+                <a href="#clase14">Diseño de página</a> 
+                <a href="#clase15">Márgenes</a> 
+            </div>
+        </div>
+        
+        <!--CONTENEDOR CON LAS SECCIONES Y CLASES DEL CURSO-->
+        <div class="container-cards">
+            <div class="container-opacity">
+                <div class="container-course">
+
+                    <!--BIENVENIDA DEL CURSO-->
+                    <div class="content-wellcome">
+                        <div class="content-wellcome-text">
+                            <h2>Word</h2>
+                            <p>
+                                Este curso tratará sobre el uso del programa de Microsoft llamado Word. Word es un programa para procesar texto, es usado para escribir de una manera sencilla y ordenada. Word es una aplicación muy versátil y le permitirá insertar tablas, imágenes, graficas, etc.
+                                <br>
+                                <br>
+                                Cada clase cuenta con un video enseñando los temas a abarcar, un resumen del video y un archivo PDF para descargar sobre el video por si desea aprender la información por escrito.
+                            </p>
+                            <div class="container-btn-subs">
+                                <a href="#" id="btn-abrir-popup">Suscribirse</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CONTENEDOR OSCURO-->
+                    <div class="content-dark" id="clase1">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3IktslQ5XJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Primeros pasos</h2>
+                                    <p>
+                                       En este primer video se enseñará dónde encontrar y abrir el programa de Word con el que cuenta su computadora. 
+                                       <br>
+                                       Además de cómo mostrar el funcionamiento de la lupa de Word y como guardar el documento.
+									<br>
+                                    </p>
+                                    <a href="../pdf/word/Curso de word 1.pdf" target="_blank">Descargar en PDF</a>
+                                </div>             
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CONTENEDOR BLANCO-->
+                    <div class="content-light" id="clase2">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/B53XJVLn7EQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Herramientas básicas</h2>
+                                    <p>
+                                      Anteriormente se enseñó como abrir un documento Word, ahora se enseñará el uso de herramientas básicas para modificar un texto en Word, por ejemplo: justificar un párrafo y cambiar la fuente del texto; lo cual implica el tamaño, tipo y formato (cursiva, negritas, subrayado) que se le puede aplicar al texto seleccionado, entre otras cosas.
+									  <br>
+									  <br>
+									  Además de también enseñar como utilizar la herramienta para faltas de ortografía que Word proporciona.
+                                    </p>
+                                    <a href="../pdf/word/Curso de Word 2.pdf" target="_blank">Descargar en PDF</a>
+                                </div>            
+                            </div>
+                        </div>
+                    </div>
+					
+					 <!--CONTENEDOR OSCURO-->
+					<div class="content-dark" id="clase3">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lSgULSoxnaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Títulos e imágenes</h2>
+                                    <p>
+                                        A continuación, se le enseñará a crear títulos y subtítulos e incluir imágenes. <br>
+                                        Por último se enseña el cómo poder enlistar contenido.
+                                        
+                                    </p>
+                                    <a href="../pdf/word/Curso de Word 3.pdf" target="_blank">Descargar en PDF</a>
+                                </div>              
+                            </div>
+                        </div>
+                    </div>
+					
+					<!--CONTENEDOR BLANCO-->
+					<div class="content-light" id="clase4">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/d9BRVe6SW4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Configurar una página</h2>
+                                    <p>
+										En este 4to video se enseñará cómo configurar una página de Word, en este caso dividir el texto en dos o más columnas a su gusto. 
+                                        <br>
+                                        Por último, se mostrará como quitar la división de las columnas creadas.
+                                    </p>
+                                    <a href="../pdf/word/Curso de Word 4.pdf" target="_blank">Descargar en PDF</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+					
+					 <!--CONTENEDOR OSCURO-->
+					<div class="content-dark" id="clase5">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/exQJ0bixe5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Tablas</h2>
+                                    <p>
+                                        El uso de las tablas es importante cuando se tienen muchas cantidades de datos que se pueden sistematizar. 
+                                        <br>
+                                        En este video le enseñaremos como poder organizar su información en tablas y adjuntarlas en sus hojas.
+                                    </p>
+                                    <a href="../pdf/word/Curso de Word 5.pdf" target="_blank">Descargar en PDF</a>
+                                </div>              
+                            </div>
+                        </div>
+                    </div>
+					
+					<!--CONTENEDOR BLANCO-->
+					<div class="content-light" id="clase6">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VjB0H_z-1YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Cuadros de textos</h2>
+                                    <p>
+										En este video se enseñará sobre el uso de los "cuadros de textos". 
+                                        <br>
+                                        Además también usted sabrá donde están los botones para manipular figuras geométricas.
+
+                                    </p>
+                                    <a href="../pdf/word/Curso de Word 6.pdf" target="_blank">Descargar en PDF</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+					
+					  <!--CONTENEDOR OSCURO-->
+					<div class="content-dark" id="clase7">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CzvHRZ0xBn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Enumerar páginas</h2>
+                                    <p>
+                                        Este video enseña el cómo se pueden enumerar cada una de las páginas que contiene su documento. 
+                                        <br>
+                                        De esta manera usted podrá escribir libros con una organización completamente profesional.
+                                    </p>
+                                    <a href="../pdf/word/Curso de Word 7.pdf" target="_blank">Descargar en PDF</a>
+                                </div>              
+                            </div>
+                        </div>
+                    </div>
+					
+					<!--CONTENEDOR BLANCO-->
+					<div class="content-light" id="clase8">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9NEewCu4Bms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Combinación de correspondencia</h2>
+                                    <p>
+                                        Este video mostrará el uso de la sección “Iniciar combinación de correspondencia”. 
+                                        <br><br> 
+                                        La función principal de esta sección es facilitarle el crear documentos que en alguna parte de su formato tiene que incluir el nombre del destinatario, y en este caso son muchos los destinatarios (ideal para invitaciones de fiestas).
+                                        
+                                       
+										
+
+                                    </p>
+                                    <a href="../pdf/word/Curso de Word 8.pdf" target="_blank">Descargar en PDF</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+					
+					  <!--CONTENEDOR OSCURO-->
+					<div class="content-dark" id="clase9">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ADlAAHge6eA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Smart Art</h2>
+                                    <p>
+                                        En este video se enseñará sobre el uso de la herramienta Smart Art que contiene Word. 
+                                        <br>
+                                        Smart Art es usada para insertar diferentes tipos de gráficas y diagramas con un diseño ya predefinido.
+                                    </p>
+                                    <a href="../pdf/word/Curso de Word 9.pdf" target="_blank">Descargar en PDF</a>
+                                </div>              
+                            </div>
+                        </div>
+                    </div>
+					
+					<!--CONTENEDOR BLANCO-->
+					<div class="content-light" id="clase10">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2f-nADoKd0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Gráficas estadísticas</h2>
+                                    <p>
+										Anteriormente se enseñó como utilizar Smart Art, en este video se enseñará sobre el uso de otra herramienta que también utilizan gráficas, pero en este caso son graficas estadísticas (utilizan hojas de Excel para ingresar los datos necesarios).
+                                        <br><br>
+                                        Por último, se aprenderá sobre como modificar el diseño de las gráficas.
+                                    </p>
+                                    <a href="../pdf/word/Curso de Word 10.pdf" target="_blank">Descargar en PDF</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+					
+					  <!--CONTENEDOR OSCURO-->
+					<div class="content-dark" id="clase11">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jEsVnqspI7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Captura de pantalla</h2>
+                                    <p>
+                                        Este video a comparación de los anteriores es más corto, solamente se enseñará sobre la toma de una captura de pantalla y como agregarla al documento.
+                                    </p>
+                                    <a href="../pdf/word/Curso de Word 11.pdf" target="_blank">Descargar en PDF</a>
+                                </div>              
+                            </div>
+                        </div>
+                    </div>
+					
+					<!--CONTENEDOR BLANCO-->
+					<div class="content-light" id="clase12">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wIhdaFA8OV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Portadas</h2>
+                                    <p>
+										El uso de portadas es lo básico para que un documento tenga una mejor presentación. 
+                                        <br>
+                                        Con las plantillas de portadas usted sólo cambiará las palabras, pero ya tendrá los tipos de letra y colores adecuados.
+
+                                    </p>
+                                    <a href="../pdf/word/Curso de Word 12.pdf" target="_blank">Descargar en PDF</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+					
+					  <!--CONTENEDOR OSCURO-->
+					<div class="content-dark" id="clase13">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_wNpFYwnmys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Marcas de agua</h2>
+                                    <p>
+                                        Las marcas de agua es una imagen superpuesta sobre un documento, la cual tiene cierto nivel de transparencia e impide ver con total claridad lo que hay detrás de ella (molesto para la vista). 
+                                        <br><br> 
+                                        Para aprovechar de mejor manera este sello especial, se lo puede colocar a las publicaciones que haga en nombre de una marca o simplemente de algo que usted quiere hacer saber en claro que es suyo.
+                                        
+                                    </p>
+                                    <a href="../pdf/word/Curso de Word 13.pdf" target="_blank">Descargar en PDF</a>
+                                </div>              
+                            </div>
+                        </div>
+                    </div>
+					
+					<!--CONTENEDOR BLANCO-->
+					<div class="content-light" id="clase14">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gU6-_YAYaj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Diseño de página</h2>
+                                    <p>
+										En este video se enseñará el cómo modificar el diseño de la página. 
+                                        <br>
+                                        En este caso es referente al color de las hojas y el poder colocar estilos a los bordes de estas para que sean más llamativos si así lo desea.
+                                    </p>
+                                    <a href="../pdf/word/Curso de Word 14.pdf" target="_blank">Descargar en PDF</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+					
+					  <!--CONTENEDOR OSCURO-->
+					<div class="content-dark" id="clase15">
+                        <div class="content-dark-text">
+                            <div class="content-dark-sections">
+
+                                <!--VIDEO DE LA CLASE-->
+                                <div class="section-1">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JV2iq_sLJ4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <!--TEXTO DE LA CLASE-->
+                                <div class="section-2">
+                                    <h2>Márgenes</h2>
+                                    <p>
+                                        En esta última clase se aprenderá sobre los márgenes que Word proporciona y la creación de uno personalizado. 
+                                        <br>
+                                        Los márgenes son la distancia que tiene la letra con la orilla de la hoja.
+                                    </p>
+                                    <a href="../pdf/word/Curso de Word 15.pdf" target="_blank">Descargar en PDF</a>
+                                </div>              
+                            </div>
+                        </div>
+                    </div>
+					
+                    <!--SECCION DE ACTIVIDADES OPCIONALES-->
+                    <section class="actividades" id="actividades" style="background-color: #fffff7;">
+                        <h2>Actividades opcionales</h2>
+                        <p>
+                            A continuación, se presentan algunas actividades que pueden ser de utilidad para reforzar los temas aprendidos en el curso. Son opcionales, está en su decisión optar por no hacerlas.
+                        </p>
+                        <ul>
+                            <li>Actividad 1: Abrir un documento de Word, escribir un texto mínimo de un párrafo, guardar el archivo en escritorio y nombrarlo “Actividad 1”.</li>
+                            <li>Actividad 2: Abra un documento de Word en el cual va a escribir una historia, puede ser lo que realizó durante el día, un cuento, etc. 
+                                Después divida su texto en dos columnas. 
+                                Escriba un enunciado en una columna aparte (después de haber escrito en dos columnas comenzarán a escribir en una sola sin modificar las anteriores).</li>
+                            <li>Actividad 3: Crear un documento Word en el cual se insertará una tabla de 5 columnas y 7 renglones. 
+                                Llenamos la tabla con los datos que queramos (en el primer renglón lo usaremos para poner los títulos de nuestras columnas). 
+                                Después de esto agregamos color a nuestra tabla, para por último eliminar la última columna para que nuestra tabla ahora tanga 4 columnas y 7 renglones.</li>
+                        </ul>
+                    </section>
+
+                    <!--SECCION DE DESPEDIDA DEL CURSO-->
+                    <section class="content-fired" style="background-color: #f8fad6;">
+                        <h2>¡Felicidades, has concluido el curso!</h2>
+                        <p>
+							Felicitaciones por llegar al final del curso, esperamos que la información enseñada en este curso haya sido de ayuda y de su agrado para comprender más sobre la variedad de herramientas que nos puede proporcionar Word.
+							<br>
+							<br>
+							Es recomendable que al menos una vez por semana realice actividades utilizando lo aprendido en estas clases, puesto que la experiencia le ayudará a incrementar sus conocimientos del tema.
+							<br>
+							<br>
+							Siempre busque realizar algo diferente a lo que normalmente se enseña en clases, de esa forma uno comprende mejor lo aprendido, no tema a buscar información de relación que aquí no mostramos. 
+
+                        </p>
+                        <a href="../cursosTotal.html">Ver mas cursos</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        //PARA EL BOTON DEL POPUP
+        var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
+        overlay = document.getElementById('overlay'),
+        popup = document.getElementById('popup'),
+        btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+
+        btnAbrirPopup.addEventListener('click', function(){
+            overlay.classList.add('active');
+            popup.classList.add('active');
+        });
+
+        btnCerrarPopup.addEventListener('click', function(e){
+            e.preventDefault();
+            overlay.classList.remove('active');
+            popup.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

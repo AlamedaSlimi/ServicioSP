@@ -1,0 +1,522 @@
+/*---------------------------*/
+/*----------CONTENT----------*/
+/*---------------------------*/
+html, body{
+    height: 100%;
+    background-color: #f8fad6;
+}
+h2, h1{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/*---------------------------*/
+/*----------PARALLAX---------*/
+/*---------------------------*/
+.parallax{
+    height: 100%;
+    background-image: url(../img/wellcome2.JPG);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*---------------------------*/
+/*--------BIENVENIDA---------*/
+/*---------------------------*/
+.container-welcome{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.welcome-text{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fffff7;
+}
+.welcome-title{
+    width: 40%;
+    height: 400px;
+}
+.welcome-title p{
+    font-size: 28px;
+}
+.welcome-title h1{
+    font-size: 40px;
+}
+/*
+.wellcome-logo{
+    
+}
+.wellcome-logo img{
+    width: 400px;
+    height: 100px;
+    padding: 10px 30px;
+    margin-bottom: 25px;
+    border-radius: 100px;
+    background-color: #fffff7;
+    transform: scale(0.9);
+}
+*/
+.btn-welcome{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-welcome a:not(.btn-ghost1){
+    text-decoration: none;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: #fffff7;
+    background-color: transparent;
+    width: 200px;
+    padding: 18px 40px;
+    border: 2px solid #fffff7;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 20px;
+}
+.btn-welcome a:hover:not(.btn-ghost1){
+    background-color: #fffff7;
+    color: #5b7a43;
+}
+.btn-ghost1{
+    text-decoration: none;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: #5b7a43;
+    background-color: #fffff7;
+    width: 200px;
+    padding: 18px 40px;
+    border: 2px solid #fffff7;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 20px;
+}
+.btn-ghost1:hover{
+    background-color: transparent;
+    color: #fffff7;
+}
+
+
+
+/*---------------------------*/
+/*-----CONTENEDOR GENERAL----*/
+/*---------------------------*/
+.container-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*PRIMERA SECCION*/
+.content-1{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #fffff7;
+}
+h2{
+    font-size: 35px;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    text-align: center;
+    border-bottom: 1px solid #415730;
+    color: #415730;
+}
+.content1-text{
+    width: 60%;
+    height: 100%;
+}
+.content1-text p{
+    font-size: 25px;
+    text-align: justify;
+    padding-top: 60px;
+    color: #415730;
+}
+.content1-text section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.content1-text section div{
+    width: 250px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.content1-text section div i{
+    font-size: 130px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #5b7a43;
+}
+.content1-text section div h4{
+    margin-top: 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #415730;
+}
+.content1-text section div p{
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+    font-size: 22px;
+}
+/*SEGUNDA SECCION*/
+.content-2{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+    background-color: #f8fad6;
+    display: flex;
+    justify-content: center;
+}
+.content2-text{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content2-cards{
+    width: 100%;
+    height: 1300px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content2-cards a{
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+.content2-cards a:hover{
+    transform: translateY(15px);
+}
+.content2-cards div{
+    width: 300px;
+    height: 400px;
+    background-color: #fffff7;
+    box-shadow: 2px 4px 8px rgb(136, 136, 136);
+    border-radius: 10px;
+    margin: 20px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content2-cards div h3{
+    width: 80%;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #415730;
+    padding-bottom: 10px;
+}
+.content2-cards div img{
+    width: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+/*TERCERA SECCION*/
+.content-3{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    background-color: #fffff7;
+    display: flex;
+    justify-content: center;
+}
+.content3-text{
+    width: 60%;
+    height: 100%;
+}
+.content3-text p{
+    text-align: justify;
+    padding-top: 60px;
+    color: #415730;
+}
+.content3-text2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.content3-text2 div{
+    font-size: 25px;
+    width: 65%;
+    text-align: justify;
+    color: #5b7a43;
+}
+.content3-text2 div p{
+    padding-top: 0px;
+    margin-top: 20px;
+}
+.content3-text2 img{
+    width: 300px;
+    height: 300px;
+    padding-left: 8%;
+}
+/*CUARTA SECCION*/
+.content-4{
+    width: 100%;
+    height: 100%;
+    background-color: #f8fad6;
+    display: flex;
+    justify-content: center;
+}
+.content4-text{
+    width: 60%;
+    height: 100%;
+}
+.content4-cards p{
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 60px;
+    color: #415730;
+}
+.content4-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.content4-cards a{
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+.content4-cards a:hover{
+    transform: scale(0.9);
+}
+.content4-cards div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.content4-cards a div img{
+    width: 220px;
+    margin-top: 10px;
+}
+.content4-cards a div p{
+    text-align: center;
+}
+.fa-youtube{
+    color: #FF1A1A;
+}
+.content4-cards div h3{
+    font-size: 30px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    color: #415730;
+}
+.content4-cards a:nth-child(1){
+    margin-left: 100px;
+}
+.content4-cards a:nth-child(3){
+    margin-right: 100px;
+}
+.content4-cards a:nth-child(1) i{
+    font-size: 125px;
+}
+.content4-cards a:nth-child(2) i{
+    font-size: 175px;
+}
+.content4-cards a:nth-child(3) i{
+    font-size: 125px;
+}
+.fa-youtube{
+    color: #5b7a43;
+}
+.fa-instagram{
+    color: #5b7a43;
+}
+.fa-facebook-square{
+    color: #5b7a43;
+}
+.content4-cards div p{
+    font-size: 18px;
+    width: 80%;
+    text-align: justify;
+    position: relative;
+    bottom: 30px;
+}
+.content4-cards a:nth-child(1){
+    width: 300px;
+    height: 450px;
+    background-color: #fffff7;
+    box-shadow: 2px 4px 8px rgb(136, 136, 136);
+    border-radius: 10px;
+}
+.content4-cards a:nth-child(2){
+    width: 300px;
+    height: 500px;
+    background-color: #fffff7;
+    box-shadow: 2px 4px 8px rgb(136, 136, 136);
+    border-radius: 10px;
+}
+.content4-cards a:nth-child(3){
+    width: 300px;
+    height: 450px;
+    background-color: #fffff7;
+    box-shadow: 2px 4px 8px rgb(136, 136, 136);
+    border-radius: 10px;
+}
+
+
+
+
+
+/*---------------------------*/
+/*-----DISEÑO RESPONSIVO-----*/
+/*---------------------------*/
+@media (max-width: 1900px){
+    .content5-cards a:nth-child(1){
+        margin-left: 0px;
+    }
+    .content5-cards a:nth-child(3){
+        margin-right: 0px;
+    }
+}
+@media (max-width: 1850px){
+    .content4-cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .content4-cards a{
+        margin-bottom: 75px;
+    }
+    .content4-cards a:nth-child(1){
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .content4-cards a:nth-child(3){
+        margin-right: 0px;
+    }
+}
+@media (max-width: 1817px){
+    .content2-cards{
+        height: 100%;
+    }
+}
+@media (max-width: 1775px){
+    .content1-text section p{
+        display: none;
+    }
+    .content-2 div section div p{
+        display: none;
+    }
+    .content2-text section div{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 1500px){
+    .content-4{
+        height: 750px;
+    }
+    .btn-aboutUs{
+        display: none;
+    }
+    .content1-text section{
+        flex-direction: column;
+        height: 900px;
+    }
+    .content1-text section div{
+        margin-bottom: 70px;
+    }
+    .content-3 img{
+        display: none;
+    }
+    .content3-text2{
+        justify-content: center;
+    }
+    .content3-text2 div{
+        width: 100%;
+    }
+    .content-4{
+        display: none;
+    }
+    html, body{
+        background-color: #fffff7;
+    }
+}
+@media (max-width: 1281px){
+    .content2-text section div{
+        width: 300px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .content2-text section div i{
+        font-size: 100px;
+    }
+}
+@media (max-width: 1250px){
+    .welcome-title{
+        width: 100%;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .welcome-title p{
+        width: 80%;
+    }
+
+}
+@media (max-width: 1171px){
+    .content2-text section div{
+        display: none;
+    }
+}
+@media (max-width: 1125px){
+    .btn-welcome a:nth-child(2){
+        display: none;
+    }
+}
+
+@media (max-width: 817px){
+    .content1-text{
+        width: 80%;
+    }
+    .content2-text{
+        width: 80%;
+    }
+    .content3-text{
+        width: 80%;
+    }
+    .content4-text{
+        width: 80%;
+    }
+}
+@media (max-width: 649px){
+    .welcome-title p{
+        width: 90%;
+    }
+}

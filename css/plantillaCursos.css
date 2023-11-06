@@ -1,0 +1,30 @@
+a{
+    color:black;
+}
+
+.video{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 150px; 
+} 
+
+.flechas{
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+
+#flechaIz{
+    width: 100%;
+    margin-right: 250px;
+    margin-left: 8px;
+}
+ 
+#flechaDe{
+    width: 100%;
+    margin-left: 250px;
+    margin-right: 8px;
+    
+}

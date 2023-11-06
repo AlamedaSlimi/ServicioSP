@@ -1,0 +1,29 @@
+div#container-load{
+    background-color: #fffff7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    transition: all 0.7s ease;
+    transition-delay: 1s;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#load{
+    border: 20px solid #8FB670;
+    border-top-color: #314223;
+    border-top-style: groove;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    animation: girar 1.2s linear infinite;
+}
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
