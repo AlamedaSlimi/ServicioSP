@@ -1,5 +1,5 @@
 <?php
-    $destino = "";
+    $destino = "ssp.asesorias.fc@uabc.edu.mx";
     $nombre = $_POST["nombre"];
     $correo = $_POST["correo"];
     $asunto = $_POST["asunto"];
